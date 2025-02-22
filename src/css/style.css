@@ -182,6 +182,15 @@ h6 {
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.home .home__content .home__content__button:hover {
+  background-color: hsl(353, 86%, 54%);
+  transform: scale(1.1);
+}
+.home .home__content .home__content__button:active {
+  background-color: hsl(235, 21%, 21%);
+  transform: scale(1);
 }
 
 @media only screen and (max-width: 650px) {

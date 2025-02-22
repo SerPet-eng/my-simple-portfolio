@@ -13,7 +13,7 @@ export default function Home() {
 
       <div className="home__image">
         <img
-          className="home__image"
+          className="home__image__profile"
           src={ProfileImage}
           alt="Profile of Christian De Guzman"
         />
