@@ -10,6 +10,8 @@
 
   min-height: 100vh;
 
+  padding: 1rem;
+
   .home__content {
     display: flex;
     flex-direction: column;
@@ -34,6 +36,18 @@
       border: none;
       border-radius: 0.5rem;
       cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .home {
+    flex-direction: column-reverse;
+    padding: 10rem 1rem 1rem 1rem;
+    text-align: center;
+
+    .home__content__name {
+      line-height: 1.2;
     }
   }
 }

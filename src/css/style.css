@@ -108,7 +108,7 @@ h6 {
   color: hsl(0, 0%, 100%);
 }
 
-@media (max-width: 650px) {
+@media only screen and (max-width: 650px) {
   .navbar .navbar__links {
     position: absolute;
     top: 0;
@@ -138,6 +138,7 @@ h6 {
   flex-direction: row;
   border: 1px solid red;
   min-height: 100vh;
+  padding: 1rem;
 }
 .home .home__content {
   display: flex;
@@ -161,4 +162,15 @@ h6 {
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 650px) {
+  .home {
+    flex-direction: column-reverse;
+    padding: 10rem 1rem 1rem 1rem;
+    text-align: center;
+  }
+  .home .home__content__name {
+    line-height: 1.2;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -49,7 +49,11 @@ export default function Navbar() {
       <div className="navbar__logo">
         <p className="navbar__logo__text">CDG</p>
       </div>
-      <ul className={`navbar__links ${toggleSideBar ? 'open' : 'close'}`}>
+      <ul
+        className={`navbar__links ${
+          isWindowSize ? (toggleSideBar ? 'open' : 'close') : ''
+        }`}
+      >
         {links.map((link, index) => {
           return (
             <li className="navbar__items" key={index}>
