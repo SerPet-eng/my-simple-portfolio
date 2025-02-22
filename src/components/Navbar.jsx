@@ -1,6 +1,24 @@
 import { Link } from 'react-router-dom';
+import Hamburger from 'hamburger-react';
+import { useEffect, useState } from 'react';
 
 export default function Navbar() {
+  const [toggleSideBar, setToggleSideBar] = useState(false);
+  const [windowSize, setWindowSize] = useState(window.innerWidth);
+  const mobileSize = 650;
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   const links = [
     {
       name: 'Home',
@@ -20,12 +38,18 @@ export default function Navbar() {
     },
   ];
 
+  const toggleSideBarHandler = () => {
+    setToggleSideBar(!toggleSideBar);
+  };
+
+  const isWindowSize = windowSize < mobileSize;
+
   return (
     <nav className="navbar">
       <div className="navbar__logo">
         <p className="navbar__logo__text">CDG</p>
       </div>
-      <ul className="navbar__links">
+      <ul className={`navbar__links ${toggleSideBar ? 'open' : 'close'}`}>
         {links.map((link, index) => {
           return (
             <li className="navbar__items" key={index}>
@@ -34,6 +58,14 @@ export default function Navbar() {
           );
         })}
       </ul>
+
+      {isWindowSize ? (
+        <div onClick={toggleSideBarHandler}>
+          <Hamburger />
+        </div>
+      ) : (
+        ''
+      )}
     </nav>
   );
 }

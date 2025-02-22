@@ -8,6 +8,10 @@
 
   background-color: $colorPrimary-Red-900;
 
+  position: fixed;
+
+  width: 100%;
+
   .navbar__logo {
     .navbar__logo__text {
       font-size: 2rem;
@@ -29,4 +33,31 @@
       }
     }
   }
+}
+
+@media (max-width: 650px) {
+  .navbar {
+    .navbar__links {
+      position: absolute;
+      top: 0;
+      right: 0;
+      flex-direction: column;
+      gap: 2rem;
+      width: 70vw;
+      height: 100vh;
+      background-color: $colorNeutrail-Dark-Blue-100;
+
+      padding-top: 10rem;
+
+      transition: all 0.5s ease-in-out;
+    }
+  }
+}
+
+.open {
+  transform: translateX(0);
+}
+
+.close {
+  transform: translateX(100%);
 }
