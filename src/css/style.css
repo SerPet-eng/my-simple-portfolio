@@ -80,7 +80,7 @@ h6 {
   overflow-x: hidden;
 }
 
-/* === NAVBAR === */
+/* === COMPONENTS === */
 .navbar {
   display: flex;
   align-items: center;
@@ -150,7 +150,7 @@ h6 {
   transform: translateX(100%);
 }
 
-/* === HOME === */
+/* === PAGES === */
 .home {
   display: flex;
   align-items: center;
@@ -202,4 +202,52 @@ h6 {
   .home .home__content__name {
     line-height: 1.2;
   }
+}
+.projects {
+  border: 1px solid red;
+  padding: 10rem 1rem;
+}
+.projects .projects__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.projects .projects__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 10px;
+}
+.projects .projects__container .projects__container__card {
+  border: none;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: justify;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.projects .projects__container .projects__container__card .projects__container__card__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.projects .projects__container .projects__container__card .projects__container__card__button {
+  background-color: hsl(350, 96%, 43%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 10px;
+  margin-top: auto;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.projects .projects__container .projects__container__card .projects__container__card__button:hover {
+  background-color: hsl(353, 86%, 54%);
 }/*# sourceMappingURL=style.css.map */
