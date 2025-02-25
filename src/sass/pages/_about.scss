@@ -6,9 +6,9 @@
   display: flex;
   flex-direction: column;
   .about__title {
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin: 0 auto 1rem auto;
   }
   .about__profile {
     display: flex;
@@ -30,44 +30,73 @@
     }
 
     .about__profile__name {
-      font-size: 1.5rem;
+      font-size: 2rem;
       font-weight: 700;
     }
   }
 
-  .about__description {
-    margin-top: 2rem;
-    text-align: justify;
+  .about__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    .about__description {
+      max-width: 800px;
+      margin-top: 2rem;
+      text-align: justify;
+      border: 1px solid red;
 
-    .about__description__title {
-      font-size: 1.5rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-    }
+      .about__description__title {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
 
-    .about__description__text {
-      font-size: 1.2rem;
-      line-height: 1.5;
-    }
+      .about__description__text {
+        font-size: 1.2rem;
+        line-height: 1.5;
+      }
 
-    .about__description__button {
-      background-color: $colorPrimary-Red-900;
-      color: $colorNeutral-White;
-      font-weight: 500;
-      padding: 0.5rem 1rem;
+      .about__description__button {
+        background-color: $colorPrimary-Red-900;
+        color: $colorNeutral-White;
+        font-weight: 500;
+        padding: 0.5rem 1rem;
 
-      border: none;
-      border-radius: 10px;
+        border: none;
+        border-radius: 10px;
 
-      margin-top: auto;
+        margin-top: auto;
 
-      cursor: pointer;
+        cursor: pointer;
 
-      transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
 
-      &:hover {
-        background-color: $colorPrimary-Red-800;
+        &:hover {
+          background-color: $colorPrimary-Red-800;
+        }
       }
     }
   }
+}
+
+#description {
+  margin: 0 auto;
+  border: 1px solid red;
+  max-width: 800px;
+
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+#beyond {
+  margin-left: auto;
+}
+
+#connect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  margin: 0 auto;
 }

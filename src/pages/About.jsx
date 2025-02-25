@@ -1,4 +1,5 @@
 import ImageProfile from '../assets/profile-1.png';
+import MeSkateboarding from '../assets/about-me/me-skateboarding.jpg';
 
 export default function About() {
   return (
@@ -15,7 +16,7 @@ export default function About() {
         </p>
       </div>
 
-      <div className="about__description">
+      <div className="about__description" id="description">
         <p className="about__description__text">
           I&apos;m a web developer with a passion for creating clean, functional
           designs. When I&apos;m not coding, you&apos;ll probably catch me
@@ -26,48 +27,47 @@ export default function About() {
         </p>
       </div>
 
-      <div className="about__description">
-        <p className="about__description__title">My Journey</p>
-        <p className="about__description__text">
-          Skateboarding taught me about balance and persistence—two things that
-          surprisingly help me write better code. Music, with its rhythms and
-          unexpected turns, inspires the creativity I bring to every project. My
-          journey into web development started as curiosity but quickly turned
-          into a full-on passion for building things that are not just
-          functional but meaningful.
-        </p>
-      </div>
+      <div className="about__container">
+        <div className="about__description" id="journey">
+          <p className="about__description__title">My Journey</p>
+          <p className="about__description__text">
+            Skateboarding taught me about balance and persistence—two things
+            that surprisingly help me write better code. Music, with its rhythms
+            and unexpected turns, inspires the creativity I bring to every
+            project. My journey into web development started as curiosity but
+            quickly turned into a full-on passion for building things that are
+            not just functional but meaningful.
+          </p>
+        </div>
+        <div className="about__description" id="beyond">
+          <p className="about__description__title">Beyond Code</p>
+          <p className="about__description__text">
+            Outside of web development, I&apos;m a huge fan of skateboarding and
+            love diving into different music genres—from the storytelling in
+            Kendrick Lamar&apos;s albums to the raw energy of alternative rock.
+            Lately, I&apos;ve been exploring backend web developing and learn
+            how I can use it for my projects.
+          </p>
+        </div>
+        <div className="about__description" id="why">
+          <p className="about__description__title">Why I Build</p>
+          <p className="about__description__text">
+            For me, web development isn&apos;t just about writing code—it&apos;s
+            about solving problems and creating something from nothing. I&apos;m
+            constantly learning, whether that&apos;s mastering React, diving
+            into backend development
+          </p>
+        </div>
+        <div className="about__description" id="connect">
+          <p className="about__description__title">Let's Connect</p>
+          <p className="about__description__text">
+            I&apos;m always up for collaborating on new projects or just talking
+            about design, tech, or music. If you&apos;re interested in working
+            together or just want to chat, feel free to reach out.
+          </p>
 
-      <div className="about__description">
-        <p className="about__description__title">Beyond Code</p>
-        <p className="about__description__text">
-          Outside of web development, I&apos;m a huge fan of skateboarding and
-          love diving into different music genres—from the storytelling in
-          Kendrick Lamar&apos;s albums to the raw energy of alternative rock.
-          Lately, I&apos;ve been exploring backend web developing and learn how
-          I can use it for my projects.
-        </p>
-      </div>
-
-      <div className="about__description">
-        <p className="about__description__title">Why I Build</p>
-        <p className="about__description__text">
-          For me, web development isn&apos;t just about writing code—it&apos;s
-          about solving problems and creating something from nothing. I&apos;m
-          constantly learning, whether that&apos;s mastering React, diving into
-          backend development
-        </p>
-      </div>
-
-      <div className="about__description">
-        <p className="about__description__title">Let's Connect</p>
-        <p className="about__description__text">
-          I&apos;m always up for collaborating on new projects or just talking
-          about design, tech, or music. If you&apos;re interested in working
-          together or just want to chat, feel free to reach out.
-        </p>
-
-        <button className="about__description__button">Connect</button>
+          <button className="about__description__button">Connect</button>
+        </div>
       </div>
     </div>
   );
