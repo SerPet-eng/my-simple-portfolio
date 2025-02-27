@@ -233,7 +233,6 @@ h6 {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  border: 1px solid red;
   min-height: 100vh;
   padding: 1rem;
 }
@@ -351,6 +350,7 @@ h6 {
   border-radius: 50%;
   overflow: hidden;
   margin: auto;
+  border: 5px solid hsl(235, 21%, 21%);
 }
 .about .about__profile .about__profile__image img {
   width: 100%;
@@ -369,9 +369,9 @@ h6 {
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
 }
 .about .about__container .about__description {
   max-width: 800px;
@@ -384,13 +384,13 @@ h6 {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 .about .about__container .about__description:nth-child(1) {
-  background: linear-gradient(to right, hsl(350, 96%, 43%), transparent);
+  background: linear-gradient(to right, hsl(350, 96%, 43%) 80%, transparent);
 }
 .about .about__container .about__description:nth-child(2) {
-  background: linear-gradient(to left, hsl(353, 86%, 54%), transparent);
+  background: linear-gradient(to left, hsl(353, 86%, 54%) 80%, transparent);
 }
 .about .about__container .about__description:nth-child(3) {
-  background: linear-gradient(to right, hsl(353, 86%, 54%), transparent);
+  background: linear-gradient(to right, hsl(353, 86%, 54%) 80%, transparent);
 }
 .about .about__container .about__description:nth-child(4) {
   background-color: hsl(350, 96%, 43%);
@@ -471,7 +471,6 @@ hr {
   }
 }
 .contact {
-  border: 1px solid red;
   padding: 10rem 1rem;
   display: flex;
   align-items: center;

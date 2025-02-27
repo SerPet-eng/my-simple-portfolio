@@ -65,12 +65,12 @@ export default function About() {
         </div>
         <div className="about__description" id="beyond">
           <div className="about__description__header">
-            <p className="about__description__title">Beyond Code</p>
             <img
               className="about__description__header__icon"
               src={Code}
               alt="Code Icon"
             />
+            <p className="about__description__title">Beyond Code</p>
           </div>
 
           <p className="about__description__text">
