@@ -220,6 +220,9 @@ h6 {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
+.contact__form .contact__form__button:hover {
+  background-color: hsl(353, 86%, 54%);
+}
 
 @media only screen and (max-width: 650px) {
   .contact__form {
