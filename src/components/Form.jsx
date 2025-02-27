@@ -1,10 +1,42 @@
+import { usePageContext } from '../utils/PageContext';
+
 export default function Form() {
+  const { error, handleChange, handleSubmit, formData } = usePageContext();
+
+  console.log(error.name);
+
   return (
-    <form className="contact__form">
+    <form className="contact__form" onSubmit={handleSubmit}>
       <p className="contact__form__title">Contact Me</p>
-      <input type="text" placeholder="Name" />
-      <input type="email" placeholder="Email" />
-      <textarea type="text" rows="5" cols="33" placeholder="Message" />
+      <input
+        type="text"
+        name="name"
+        value={formData.name}
+        onChange={handleChange}
+        placeholder="Name"
+        className={`${error.name ? 'error' : 'default'}`}
+      />
+      <small>{error.name}</small>
+      <input
+        type="email"
+        name="email"
+        value={formData.email}
+        onChange={handleChange}
+        placeholder="Email"
+        className={`${error.email ? 'error' : 'default'}`}
+      />
+      <small>{error.email}</small>
+      <textarea
+        name="message"
+        rows="5"
+        cols="33"
+        value={formData.message}
+        onChange={handleChange}
+        placeholder="Message"
+        className={`${error.message ? 'error' : 'default'}`}
+      />
+      <small>{error.message}</small>
+
       <button className="contact__form__button" type="submit">
         Send
       </button>

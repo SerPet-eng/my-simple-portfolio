@@ -21,7 +21,7 @@
 
   input {
     padding: 0.5rem;
-    border: 1px solid #ccc;
+
     border-radius: 5px;
   }
 
@@ -29,6 +29,11 @@
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 5px;
+  }
+
+  small {
+    font-size: 0.8rem;
+    color: $colorPrimary-Red-900;
   }
 
   .contact__form__button {
@@ -46,6 +51,14 @@
       background-color: $colorPrimary-Red-800;
     }
   }
+}
+
+.default {
+  border: 1px solid #ccc;
+}
+
+.error {
+  border: 2px solid $colorPrimary-Red-900;
 }
 
 @media only screen and (max-width: 650px) {

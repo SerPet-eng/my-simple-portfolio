@@ -4,10 +4,13 @@ import TwitterIcon from '../assets/socials/icon-x-twitter.svg';
 import LinkedIn from '../assets/socials/icon-linkedin.svg';
 import GithubIcon from '../assets/socials/icon-github.svg';
 import Cover from '../assets/ContactBG.png';
+import SuccessComponent from '../components/SuccessComponent';
 
 export default function Contact() {
   return (
     <div className="contact">
+      <SuccessComponent />
+
       <div
         className="contact__header"
         style={{
