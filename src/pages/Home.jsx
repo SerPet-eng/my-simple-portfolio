@@ -2,7 +2,7 @@ import ProfileImage from '../assets/profile-1.png';
 
 export default function Home() {
   const handleDownloadCV = () => {
-    const pdfURL = '../../public/RESUME.pdf';
+    const pdfURL = '../download/RESUME.pdf';
     const link = document.createElement('a');
     link.href = pdfURL;
     link.download = 'RESUME.pdf';
