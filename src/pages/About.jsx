@@ -1,6 +1,8 @@
 import ImageProfile from '../assets/profile-1.png';
 import BackgroundIMG from '../assets/about-me/backgroundIMG.png';
 import { useNavigate } from 'react-router-dom';
+import Compass from '../assets/Compass.svg';
+import Code from '../assets/Code.svg';
 
 export default function About() {
   const navigate = useNavigate();
@@ -46,7 +48,15 @@ export default function About() {
         }}
       >
         <div className="about__description" id="journey">
-          <p className="about__description__title">My Journey</p>
+          <div className="about__description__header">
+            <p className="about__description__title">My Journey</p>
+            <img
+              className="about__description__header__icon"
+              src={Compass}
+              alt="Compass"
+            />
+          </div>
+
           <p className="about__description__text">
             Skateboarding taught me about balance and persistence—two things
             that surprisingly help me write better code. Music, with its rhythms
@@ -57,7 +67,15 @@ export default function About() {
           </p>
         </div>
         <div className="about__description" id="beyond">
-          <p className="about__description__title">Beyond Code</p>
+          <div className="about__description__header">
+            <p className="about__description__title">Beyond Code</p>
+            <img
+              className="about__description__header__icon"
+              src={Code}
+              alt="Code Icon"
+            />
+          </div>
+
           <p className="about__description__text">
             Outside of web development, I&apos;m a huge fan of skateboarding and
             love diving into different music genres—from the storytelling in
@@ -67,7 +85,11 @@ export default function About() {
           </p>
         </div>
         <div className="about__description" id="why">
-          <p className="about__description__title">Why I Build</p>
+          <div className="about__description__header">
+            <p className="about__description__title">Why I Build</p>
+            <h1>👷‍♂️🛠️</h1>
+          </div>
+
           <p className="about__description__text">
             For me, web development isn&apos;t just about writing code—it&apos;s
             about solving problems and creating something from nothing. I&apos;m
@@ -76,7 +98,11 @@ export default function About() {
           </p>
         </div>
         <div className="about__description" id="connect">
-          <p className="about__description__title">Let's Connect</p>
+          <div className="about__description__header">
+            <p className="about__description__title">Let's Connect</p>
+            <h1>🤝</h1>
+          </div>
+
           <p className="about__description__text">
             I&apos;m always up for collaborating on new projects or just talking
             about design, tech, or music. If you&apos;re interested in working

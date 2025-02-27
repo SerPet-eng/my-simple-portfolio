@@ -83,10 +83,23 @@
         background-color: $colorPrimary-Red-900;
       }
 
-      .about__description__title {
-        font-size: 2rem;
-        font-weight: 700;
-        margin-bottom: 1rem;
+      .about__description__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .about__description__title {
+          font-size: 2rem;
+          font-weight: 700;
+          margin-bottom: 1rem;
+        }
+
+        .about__description__header__icon {
+          width: 100px;
+        }
+
+        h1 {
+          font-size: 2.5rem;
+        }
       }
 
       .about__description__text {
