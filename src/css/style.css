@@ -88,6 +88,10 @@ h6 {
   padding: 2rem 4rem;
   position: fixed;
   width: 100%;
+  height: 150px;
+  background-repeat: repeat-x;
+  background-size: contain;
+  z-index: 99;
 }
 .navbar .navbar__logo .navbar__logo__text {
   font-size: 2.5rem;
@@ -129,6 +133,9 @@ h6 {
 }
 
 @media only screen and (max-width: 650px) {
+  .navbar {
+    background-size: cover;
+  }
   .navbar .navbar__links {
     position: absolute;
     top: 0;
@@ -214,6 +221,12 @@ h6 {
   transition: all 0.3s ease-in-out;
 }
 
+@media only screen and (max-width: 650px) {
+  .contact__form {
+    width: 100%;
+    height: 100%;
+  }
+}
 /* === PAGES === */
 .home {
   display: flex;
@@ -356,6 +369,9 @@ h6 {
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .about .about__container .about__description {
   max-width: 800px;
@@ -446,6 +462,14 @@ hr {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
+@media only screen and (max-width: 650px) {
+  .about .about__container {
+    background-size: 0%;
+  }
+  .about .about__container .about__description:nth-child(1), .about .about__container .about__description:nth-child(2), .about .about__container .about__description:nth-child(3) {
+    background: linear-gradient(180deg, hsl(350, 96%, 43%), hsl(353, 86%, 54%));
+  }
+}
 .contact {
   border: 1px solid red;
   padding: 10rem 1rem;
@@ -480,4 +504,12 @@ hr {
 }
 .contact .contact__container .contact__social .contact__social__icons img {
   width: 2rem;
+}
+
+@media only screen and (max-width: 650px) {
+  .contact {
+    flex-direction: column;
+    padding: 10rem 1rem 1rem 1rem;
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */

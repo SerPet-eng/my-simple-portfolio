@@ -40,3 +40,11 @@
     }
   }
 }
+
+@media only screen and (max-width: 650px) {
+  .contact {
+    flex-direction: column;
+    padding: 10rem 1rem 1rem 1rem;
+    text-align: center;
+  }
+}

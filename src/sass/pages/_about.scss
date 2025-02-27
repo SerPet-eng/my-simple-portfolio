@@ -45,6 +45,10 @@
 
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     .about__description {
       max-width: 800px;
       margin-top: 2rem;
@@ -161,4 +165,23 @@ hr {
   gap: 1rem;
   margin: 10rem auto 0 auto;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 650px) {
+  .about {
+    .about__container {
+      background-size: 0%;
+      .about__description {
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+          background: linear-gradient(
+            180deg,
+            $colorPrimary-Red-900,
+            $colorPrimary-Red-800
+          );
+        }
+      }
+    }
+  }
 }

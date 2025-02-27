@@ -42,9 +42,6 @@ export default function About() {
         className="about__container"
         style={{
           backgroundImage: `url(${BackgroundIMG})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
         }}
       >
         <div className="about__description" id="journey">

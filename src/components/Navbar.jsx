@@ -50,10 +50,6 @@ export default function Navbar() {
       className="navbar"
       style={{
         backgroundImage: `url(${bgNavBar})`,
-        zIndex: 99,
-        backgroundSize: 'contain',
-        backgroundRepeat: 'repeat',
-        height: '150px',
       }}
     >
       <div className="navbar__logo">
