@@ -1,7 +1,14 @@
 import ImageProfile from '../assets/profile-1.png';
-import MeSkateboarding from '../assets/about-me/me-skateboarding.jpg';
+import BackgroundIMG from '../assets/about-me/backgroundIMG.png';
+import { useNavigate } from 'react-router-dom';
 
 export default function About() {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/contact');
+  };
+
   return (
     <div className="about">
       <p className="about__title">About Me</p>
@@ -27,7 +34,17 @@ export default function About() {
         </p>
       </div>
 
-      <div className="about__container">
+      <hr />
+
+      <div
+        className="about__container"
+        style={{
+          backgroundImage: `url(${BackgroundIMG})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
         <div className="about__description" id="journey">
           <p className="about__description__title">My Journey</p>
           <p className="about__description__text">
@@ -66,7 +83,9 @@ export default function About() {
             together or just want to chat, feel free to reach out.
           </p>
 
-          <button className="about__description__button">Connect</button>
+          <button className="about__description__button" onClick={handleClick}>
+            Connect
+          </button>
         </div>
       </div>
     </div>

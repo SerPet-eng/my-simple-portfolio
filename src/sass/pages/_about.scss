@@ -5,6 +5,7 @@
 
   display: flex;
   flex-direction: column;
+
   .about__title {
     font-size: 4rem;
     font-weight: 700;
@@ -39,11 +40,48 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
     .about__description {
       max-width: 800px;
       margin-top: 2rem;
       text-align: justify;
-      border: 1px solid red;
+      border: none;
+      border-radius: 10px;
+      padding: 1rem;
+      color: $colorNeutral-White;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+      &:nth-child(1) {
+        background: linear-gradient(
+          to right,
+          $colorPrimary-Red-900,
+          transparent
+        );
+      }
+
+      &:nth-child(2) {
+        background: linear-gradient(
+          to left,
+          $colorPrimary-Red-800,
+          transparent
+        );
+      }
+
+      &:nth-child(3) {
+        background: linear-gradient(
+          to right,
+          $colorPrimary-Red-800,
+          transparent
+        );
+      }
+
+      &:nth-child(4) {
+        background-color: $colorPrimary-Red-900;
+      }
 
       .about__description__title {
         font-size: 2rem;
@@ -57,8 +95,8 @@
       }
 
       .about__description__button {
-        background-color: $colorPrimary-Red-900;
-        color: $colorNeutral-White;
+        background-color: $colorNeutral-White;
+        color: $colorNeutral-Black-100;
         font-weight: 500;
         padding: 0.5rem 1rem;
 
@@ -72,6 +110,7 @@
         transition: all 0.3s ease-in-out;
 
         &:hover {
+          transform: scale(1.2);
           background-color: $colorPrimary-Red-800;
         }
       }
@@ -79,10 +118,19 @@
   }
 }
 
+hr {
+  margin: 1rem auto;
+}
+
 #description {
-  margin: 0 auto;
-  border: 1px solid red;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color: $colorPrimary-Red-900;
+  margin: 0 auto 5rem auto;
+  border: none;
+  border-radius: 10px;
   max-width: 800px;
+  padding: 1rem;
+  color: $colorNeutral-White;
 
   text-align: center;
   font-size: 1.2rem;
@@ -98,5 +146,6 @@
   align-items: center;
   text-align: center;
   gap: 1rem;
-  margin: 0 auto;
+  margin: 10rem auto 0 auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }

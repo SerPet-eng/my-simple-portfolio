@@ -89,6 +89,7 @@ h6 {
   background-color: hsl(350, 96%, 43%);
   position: fixed;
   width: 100%;
+  z-index: 99;
 }
 .navbar .navbar__logo .navbar__logo__text {
   font-size: 2rem;
@@ -148,6 +149,32 @@ h6 {
 
 .close {
   transform: translateX(100%);
+}
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: absolute;
+  border: 1px solid red;
+  z-index: -1;
+}
+.cover img {
+  width: 200px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.cover img:nth-child(1) {
+  margin-left: 10%;
+  transform: rotate(5deg);
+}
+.cover img:nth-child(2) {
+  transform: rotate(-5deg);
+  margin-right: 10%;
+}
+.cover img:nth-child(3) {
+  transform: rotate(5deg);
+  margin-left: 20%;
 }
 
 /* === PAGES === */
@@ -289,12 +316,31 @@ h6 {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 .about .about__container .about__description {
   max-width: 800px;
   margin-top: 2rem;
   text-align: justify;
-  border: 1px solid red;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem;
+  color: hsl(0, 0%, 100%);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.about .about__container .about__description:nth-child(1) {
+  background: linear-gradient(to right, hsl(350, 96%, 43%), transparent);
+}
+.about .about__container .about__description:nth-child(2) {
+  background: linear-gradient(to left, hsl(353, 86%, 54%), transparent);
+}
+.about .about__container .about__description:nth-child(3) {
+  background: linear-gradient(to right, hsl(353, 86%, 54%), transparent);
+}
+.about .about__container .about__description:nth-child(4) {
+  background-color: hsl(350, 96%, 43%);
 }
 .about .about__container .about__description .about__description__title {
   font-size: 2rem;
@@ -306,8 +352,8 @@ h6 {
   line-height: 1.5;
 }
 .about .about__container .about__description .about__description__button {
-  background-color: hsl(350, 96%, 43%);
-  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 0%);
   font-weight: 500;
   padding: 0.5rem 1rem;
   border: none;
@@ -317,13 +363,23 @@ h6 {
   transition: all 0.3s ease-in-out;
 }
 .about .about__container .about__description .about__description__button:hover {
+  transform: scale(1.2);
   background-color: hsl(353, 86%, 54%);
 }
 
+hr {
+  margin: 1rem auto;
+}
+
 #description {
-  margin: 0 auto;
-  border: 1px solid red;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color: hsl(350, 96%, 43%);
+  margin: 0 auto 5rem auto;
+  border: none;
+  border-radius: 10px;
   max-width: 800px;
+  padding: 1rem;
+  color: hsl(0, 0%, 100%);
   text-align: center;
   font-size: 1.2rem;
 }
@@ -338,5 +394,6 @@ h6 {
   align-items: center;
   text-align: center;
   gap: 1rem;
-  margin: 0 auto;
+  margin: 10rem auto 0 auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }/*# sourceMappingURL=style.css.map */
