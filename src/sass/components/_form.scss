@@ -1,0 +1,45 @@
+@use '../variables.scss' as *;
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+
+  padding: 1rem;
+
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  height: 500px;
+
+  .contact__form__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .contact__form__button {
+    background-color: $colorPrimary-Red-900;
+    color: $colorNeutral-White;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 10px;
+    margin-top: auto;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+}
