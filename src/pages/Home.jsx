@@ -2,12 +2,13 @@ import ProfileImage from '../assets/profile-1.png';
 
 export default function Home() {
   const handleDownloadCV = () => {
-    const pdfURL = '../assets/RESUME.pdf';
+    const pdfURL = '/RESUME.pdf';
     const link = document.createElement('a');
     link.href = pdfURL;
-    link.download = 'RESUME.pdf';
+    link.download = 'Christian-De-Guzman-CV.pdf';
+    document.body.appendChild(link);
     link.click();
-    document.removeChild(link);
+    document.body.removeChild(link);
   };
 
   return (
