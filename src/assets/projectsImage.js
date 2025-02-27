@@ -9,6 +9,7 @@ const projects = [
       mobile:
         'https://res.cloudinary.com/dhvpcbfat/image/upload/v1740401298/Projects/cyoljsgw45xknxbejc9h.jpg',
     },
+    urlProject: 'https://lambent-hotteok-bd7729.netlify.app/',
   },
   {
     title: 'Contact Form',
@@ -20,6 +21,7 @@ const projects = [
       mobile:
         'https://res.cloudinary.com/dhvpcbfat/image/upload/v1740401298/Projects/l0pyoubfhtsfhjcnestc.jpg',
     },
+    urlProject: 'https://aquamarine-otter-6e3c1a.netlify.app/',
   },
   {
     title: 'E-Commerce Product Page',
@@ -31,6 +33,7 @@ const projects = [
       mobile:
         'https://res.cloudinary.com/dhvpcbfat/image/upload/v1740401295/Projects/rlj42kxqhatu9ei5kovt.jpg',
     },
+    urlProject: 'https://silver-toffee-b3751d.netlify.app/',
   },
   {
     title: 'Email Form',
@@ -42,6 +45,7 @@ const projects = [
       mobile:
         'https://res.cloudinary.com/dhvpcbfat/image/upload/v1740401295/Projects/cxxm06blgjabh04jrvk8.jpg',
     },
+    urlProject: 'https://inquisitive-otter-5f8f77.netlify.app/',
   },
   {
     title: 'IP Address Tracker',
@@ -53,6 +57,7 @@ const projects = [
       mobile:
         'https://res.cloudinary.com/dhvpcbfat/image/upload/v1740401296/Projects/exnzlvnnrzvmelssrlul.jpg',
     },
+    urlProject: 'https://precious-lebkuchen-ed1e9d.netlify.app/',
   },
   {
     title: 'Mortgage Calculator',
@@ -64,6 +69,7 @@ const projects = [
       mobile:
         'https://res.cloudinary.com/dhvpcbfat/image/upload/v1740401295/Projects/ll7llh12zonaeypveeps.jpg',
     },
+    urlProject: 'https://ephemeral-paletas-dccc92.netlify.app/',
   },
   {
     title: 'Product List with Cart',
@@ -86,6 +92,7 @@ const projects = [
       mobile:
         'https://res.cloudinary.com/dhvpcbfat/image/upload/v1740401296/Projects/qpsbktazftslabdordol.jpg',
     },
+    urlProject: 'https://magnificent-churros-50a683.netlify.app/',
   },
   {
     title: 'Result Summary',
@@ -97,6 +104,7 @@ const projects = [
       mobile:
         'https://res.cloudinary.com/dhvpcbfat/image/upload/v1740401297/Projects/w1wlbko0mcc3oazwqbwg.jpg',
     },
+    urlProject: 'https://jazzy-hummingbird-d17433.netlify.app/',
   },
   {
     title: 'Simple Resume',
@@ -108,6 +116,7 @@ const projects = [
       mobile:
         'https://res.cloudinary.com/dhvpcbfat/image/upload/v1740401297/Projects/dk2n3qd0erzoyfgkknn1.jpg',
     },
+    urlProject: 'https://jannaresume.netlify.app/',
   },
   {
     title: 'Conference Ticket Generator',
@@ -119,6 +128,7 @@ const projects = [
       mobile:
         'https://res.cloudinary.com/dhvpcbfat/image/upload/v1740401296/Projects/b3qpcw6kj03xfaocbhrg.jpg',
     },
+    urlProject: 'https://tiny-granita-f41c3f.netlify.app/',
   },
   {
     title: 'Joke Generator',
@@ -130,6 +140,7 @@ const projects = [
       mobile:
         'https://res.cloudinary.com/dhvpcbfat/image/upload/v1740401295/Projects/jhov8cojiussom1rhefb.jpg',
     },
+    urlProject: 'https://joke-generator-chuck-norris.netlify.app/',
   },
 ];
 

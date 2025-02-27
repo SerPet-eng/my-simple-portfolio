@@ -5,6 +5,10 @@ function handleImageChange(isMobile, desktop, mobile) {
   return isMobile ? mobile : desktop;
 }
 
+function handleRedirect(url) {
+  window.open(url, '_blank');
+}
+
 export default function Projects() {
   const [currentWidth, setCurrentWidth] = useState(window.innerWidth);
   const mobileWidth = 650;
@@ -45,7 +49,10 @@ export default function Projects() {
               {project.description}
             </p>
 
-            <button className="projects__container__card__button">
+            <button
+              className="projects__container__card__button"
+              onClick={() => handleRedirect(project.urlProject)}
+            >
               See Project
             </button>
           </div>
