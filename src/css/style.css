@@ -86,13 +86,11 @@ h6 {
   align-items: center;
   justify-content: space-between;
   padding: 2rem 4rem;
-  background-color: hsl(350, 96%, 43%);
   position: fixed;
   width: 100%;
-  z-index: 99;
 }
 .navbar .navbar__logo .navbar__logo__text {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: hsl(0, 0%, 100%);
 }
@@ -103,6 +101,7 @@ h6 {
 .navbar .navbar__links .navbar__items {
   list-style: none;
   font-weight: 500;
+  font-size: 1.25rem;
   position: relative;
 }
 .navbar .navbar__links .navbar__items a {

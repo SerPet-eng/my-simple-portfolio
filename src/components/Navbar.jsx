@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import Hamburger from 'hamburger-react';
 import { useEffect, useState } from 'react';
+import bgNavBar from '../assets/bgNavBar.png';
 
 export default function Navbar() {
   const [toggleSideBar, setToggleSideBar] = useState(false);
@@ -45,7 +46,16 @@ export default function Navbar() {
   const isWindowSize = windowSize < mobileSize;
 
   return (
-    <nav className="navbar">
+    <nav
+      className="navbar"
+      style={{
+        backgroundImage: `url(${bgNavBar})`,
+        zIndex: 99,
+        backgroundSize: 'contain',
+        backgroundRepeat: 'repeat',
+        height: '150px',
+      }}
+    >
       <div className="navbar__logo">
         <p className="navbar__logo__text">CDG</p>
       </div>
