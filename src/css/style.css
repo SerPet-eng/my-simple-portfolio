@@ -79,9 +79,6 @@ h6 {
   position: relative;
   overflow-x: hidden;
 }
-.root-layout .main {
-  padding-top: 5rem;
-}
 
 /* === COMPONENTS === */
 .navbar {
@@ -345,6 +342,7 @@ h6 {
   }
 }
 .projects {
+  border: 1px solid red;
   padding: 10rem 1rem;
 }
 .projects .projects__title {
