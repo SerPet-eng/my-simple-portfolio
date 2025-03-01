@@ -6,6 +6,8 @@
   justify-content: center;
   flex-direction: row;
 
+  gap: 5rem;
+
   min-height: 100vh;
 
   padding: 1rem;
@@ -46,6 +48,17 @@
         background-color: $colorNeutrail-Dark-Blue-100;
         transform: scale(1);
       }
+    }
+  }
+
+  .home__image {
+    .home__image__profile {
+      outline: 10px solid $colorPrimary-Red-900;
+      border-radius: 50%;
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      transform: rotate(15deg);
     }
   }
 }

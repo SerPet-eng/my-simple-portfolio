@@ -1,4 +1,4 @@
-import ImageProfile from '../assets/profile-1.png';
+import ImageProfile from '../assets/me-picture.png';
 import BackgroundIMG from '../assets/about-me/backgroundIMG.png';
 import { useNavigate } from 'react-router-dom';
 import Compass from '../assets/Compass.svg';

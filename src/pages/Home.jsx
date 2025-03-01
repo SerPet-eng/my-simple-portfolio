@@ -1,4 +1,5 @@
-import ProfileImage from '../assets/profile-1.png';
+import ImageProfile from '../assets/avatar.png';
+import Background from '../assets/background.png';
 
 export default function Home() {
   const handleDownloadCV = () => {
@@ -25,8 +26,9 @@ export default function Home() {
 
       <div className="home__image">
         <img
+          style={{ backgroundImage: `url(${Background})` }}
           className="home__image__profile"
-          src={ProfileImage}
+          src={ImageProfile}
           alt="Profile of Christian De Guzman"
         />
       </div>

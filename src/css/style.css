@@ -280,6 +280,7 @@ h6 {
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  gap: 5rem;
   min-height: 100vh;
   padding: 1rem;
 }
@@ -314,6 +315,13 @@ h6 {
 .home .home__content .home__content__button:active {
   background-color: hsl(235, 21%, 21%);
   transform: scale(1);
+}
+.home .home__image .home__image__profile {
+  outline: 10px solid hsl(350, 96%, 43%);
+  border-radius: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotate(15deg);
 }
 
 @media only screen and (max-width: 650px) {
