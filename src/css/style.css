@@ -551,6 +551,7 @@ hr {
 }
 .contact .contact__container .contact__social .contact__social__icons img {
   width: 2rem;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 650px) {

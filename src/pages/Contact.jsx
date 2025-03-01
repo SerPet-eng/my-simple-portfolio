@@ -6,6 +6,10 @@ import GithubIcon from '../assets/socials/icon-github.svg';
 import Cover from '../assets/ContactBG.png';
 import SuccessComponent from '../components/SuccessComponent';
 
+function handleRedirect(url) {
+  window.open(url, '_blank');
+}
+
 export default function Contact() {
   return (
     <div className="contact">
@@ -32,10 +36,34 @@ export default function Contact() {
         <div className="contact__social">
           <p className="contact__social__title">Find me in:</p>
           <div className="contact__social__icons">
-            <img src={FacebookIcon} alt="facebook" />
-            <img src={TwitterIcon} alt="twitter" />
-            <img src={LinkedIn} alt="linkedin" />
-            <img src={GithubIcon} alt="github" />
+            <img
+              src={FacebookIcon}
+              alt="facebook"
+              onClick={() =>
+                handleRedirect(
+                  'https://www.facebook.com/christian.deguzman.1840/',
+                )
+              }
+            />
+            <img
+              src={TwitterIcon}
+              alt="twitter"
+              onClick={() => handleRedirect('https://x.com/dchristian796')}
+            />
+            <img
+              src={LinkedIn}
+              alt="linkedin"
+              onClick={() =>
+                handleRedirect(
+                  'https://www.linkedin.com/in/christian-de-guzman-b35b03279/',
+                )
+              }
+            />
+            <img
+              src={GithubIcon}
+              alt="github"
+              onClick={() => handleRedirect('https://github.com/SerPet-eng')}
+            />
           </div>
         </div>
       </div>
