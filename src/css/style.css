@@ -79,6 +79,9 @@ h6 {
   position: relative;
   overflow-x: hidden;
 }
+.root-layout .main {
+  padding-top: 5rem;
+}
 
 /* === COMPONENTS === */
 .navbar {
@@ -316,12 +319,19 @@ h6 {
   background-color: hsl(235, 21%, 21%);
   transform: scale(1);
 }
+.home .home__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .home .home__image .home__image__profile {
   outline: 10px solid hsl(350, 96%, 43%);
   border-radius: 50%;
   background-size: contain;
   background-repeat: no-repeat;
   transform: rotate(15deg);
+  width: 60%;
+  height: 60%;
 }
 
 @media only screen and (max-width: 650px) {

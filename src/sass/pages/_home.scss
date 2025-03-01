@@ -52,6 +52,9 @@
   }
 
   .home__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     .home__image__profile {
       outline: 10px solid $colorPrimary-Red-900;
       border-radius: 50%;
@@ -59,6 +62,9 @@
       background-repeat: no-repeat;
 
       transform: rotate(15deg);
+
+      width: 60%;
+      height: 60%;
     }
   }
 }
