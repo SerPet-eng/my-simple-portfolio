@@ -131,6 +131,17 @@ const projects = [
         'https://res.cloudinary.com/dhvpcbfat/image/upload/v1740401295/Projects/jhov8cojiussom1rhefb.jpg',
     },
   },
+  {
+    title: 'Multi-Form',
+    description:
+      'This challenge was from Frontend Mentor to build a multi-form',
+    thumbnail: {
+      desktop:
+        'https://res.cloudinary.com/dhvpcbfat/image/upload/v1742912620/Projects/voj8pvw7ljg7rhkou24z.jpg',
+      mobile:
+        'https://res.cloudinary.com/dhvpcbfat/image/upload/v1742912620/Projects/nzytc9kqrthaoqhiljqq.jpg',
+    },
+  },
 ];
 
 export default projects;
