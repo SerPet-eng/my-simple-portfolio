@@ -4,7 +4,6 @@ import TwitterIcon from '../assets/socials/icon-x-twitter.svg';
 import LinkedIn from '../assets/socials/icon-linkedin.svg';
 import GithubIcon from '../assets/socials/icon-github.svg';
 import Cover from '../assets/background.png';
-import SuccessComponent from '../components/SuccessComponent';
 
 function handleRedirect(url) {
   window.open(url, '_blank');
@@ -13,8 +12,6 @@ function handleRedirect(url) {
 export default function Contact() {
   return (
     <div className="contact">
-      <SuccessComponent />
-
       <div
         className="contact__header"
         style={{

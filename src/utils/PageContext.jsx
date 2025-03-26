@@ -1,5 +1,6 @@
 import { useState, useContext, createContext } from 'react';
 import emailjs from '@emailjs/browser';
+import { toast } from 'react-toastify';
 
 const PageProvider = createContext();
 
@@ -17,8 +18,6 @@ export default function PageContext({ children }) {
   const [error, setError] = useState({});
 
   const emailRegEx = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-
-  console.log(success); // ✅ Debugging
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -46,30 +45,35 @@ export default function PageContext({ children }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    if (!handleError()) return; // ✅ Prevents email sending if there are errors
-
+  
+    // Validate form
+    if (!handleError()) return;
+  
     try {
+      console.log('Sending email...'); // Debugging step
       const response = await emailjs.send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         formData,
-        import.meta.env.VITE_EMAILJS_PUBLIC_ID,
+        import.meta.env.VITE_EMAILJS_PUBLIC_ID
       );
-
+  
       if (response.status === 200) {
+        console.log('EmailJS Response:', response); // Debugging step
+        setFormData({ name: '', email: '', message: '' }); // Clear form
+        setError({});
         handleSuccess();
-        setFormData({ name: '', email: '', message: '' });
-        setError({}); // ✅ Clears previous errors on success
       }
     } catch (error) {
       console.error('EmailJS Error:', error);
-      setError({ api: 'Failed to send message. Try again later.' });
+      setError({ api: 'Failed to send message. Please try again later.' });
+      toast.error(error.api, {position: 'top-center'})
     }
   };
-
+  
   const handleSuccess = () => {
     setSuccess(true);
+    toast.success('You successfully sent a message', {position: 'top-center'})
     setTimeout(() => setSuccess(false), 5000); // ✅ Properly resets after 5s
   };
 
