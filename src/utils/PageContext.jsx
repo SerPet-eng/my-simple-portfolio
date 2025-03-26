@@ -18,8 +18,6 @@ export default function PageContext({ children }) {
 
   const emailRegEx = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-  console.log(success); // ✅ Debugging
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
