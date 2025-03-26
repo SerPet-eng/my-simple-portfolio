@@ -1,9 +1,10 @@
 import { usePageContext } from '../utils/PageContext';
 
-export default function Form() {
-  const { error, handleChange, handleSubmit, formData } = usePageContext();
 
-  console.log(error.name);
+export default function Form() {
+  const { error, handleChange, handleSubmit, formData, } = usePageContext();
+
+  console.log(formData)
 
   return (
     <form className="contact__form" onSubmit={handleSubmit}>
