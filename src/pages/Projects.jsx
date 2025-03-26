@@ -23,6 +23,10 @@ export default function Projects() {
     };
   }, []);
 
+  const buttonHandler = (link) => {
+    window.open(link, '_blank', 'noopener,noreferrer');
+  };
+
   const isMobile = currentWidth < mobileWidth;
 
   return (
@@ -45,7 +49,21 @@ export default function Projects() {
               {project.description}
             </p>
 
-            <button className="projects__container__card__button">
+            <button
+              disabled={project.link === '' ? true : false}
+              className={`projects__container__card__button ${
+                project.link === '' ? 'no-content' : 'content'
+              }`}
+              onClick={() => buttonHandler(project.link)}
+            >
+              {project.link === '' ? (
+                <span class="tooltip-text">
+                  🚧 This section is currently under maintenance. Please check
+                  back later!
+                </span>
+              ) : (
+                ''
+              )}
               See Project
             </button>
           </div>

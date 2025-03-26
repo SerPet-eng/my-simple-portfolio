@@ -39,27 +39,65 @@
         line-height: 1.2;
       }
 
-      //   .projects__container__card__description {
-      //     text-indent: 1rem;
-      //   }
+      .projects__container__card__description {
+        text-indent: 1rem;
+      }
 
       .projects__container__card__button {
-        background-color: $colorPrimary-Red-900;
+        position: relative;
         color: $colorNeutral-White;
         font-weight: 500;
         padding: 0.5rem 1rem;
+
+        text-decoration: none;
 
         border: none;
         border-radius: 10px;
 
         margin-top: auto;
 
-        cursor: pointer;
-
         transition: all 0.3s ease-in-out;
 
-        &:hover {
-          background-color: $colorPrimary-Red-800;
+        &.no-content {
+          cursor: not-allowed;
+          background-color: $colorNeutral-Gray-100;
+        }
+
+        &.content {
+          cursor: pointer;
+          background-color: $colorPrimary-Red-900;
+
+          &:hover {
+            background-color: $colorPrimary-Red-800;
+          }
+        }
+
+        .tooltip-text {
+          opacity: 0;
+
+          border: none;
+          border-radius: 10px;
+          padding: 1rem 1rem 2rem 1rem;
+          clip-path: polygon(
+            0% 0%,
+            100% 0%,
+            100% 75%,
+            75% 75%,
+            75% 100%,
+            50% 75%,
+            0% 75%
+          );
+          position: absolute;
+          left: 0;
+          transform: translate(0, -100%);
+          background-color: $colorNeutrail-Dark-Blue-100;
+          font-size: 12px;
+
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            opacity: 1;
+          }
         }
       }
     }
