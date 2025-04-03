@@ -155,6 +155,18 @@ const projects = [
     },
     link: 'https://celadon-brigadeiros-a7886b.netlify.app/',
   },
+  {
+    title: 'Browser Extension Manager',
+    description:
+      'A browser extension that enable you to toggle theme and switch the extenion from enable to unable',
+    thumbnail: {
+      desktop:
+        'https://res.cloudinary.com/dhvpcbfat/image/upload/v1743655406/project-extension-manager-desktop_iazwt0.png',
+      mobile:
+        'https://res.cloudinary.com/dhvpcbfat/image/upload/v1743655406/project-extension-manager-mobile_kc7f8i.png',
+    },
+    link: 'https://aquamarine-horse-576404.netlify.app/',
+  },
 ];
 
 export default projects;
