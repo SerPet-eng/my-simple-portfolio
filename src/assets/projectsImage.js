@@ -167,6 +167,18 @@ const projects = [
     },
     link: 'https://aquamarine-horse-576404.netlify.app/',
   },
+  {
+    title: 'Where in the world?',
+    description:
+      'This is where you can find an information about the country you wanted to search. Also you can toggle the theme from light to dark',
+    thumbnail: {
+      desktop:
+        'https://res.cloudinary.com/dhvpcbfat/image/upload/v1743659025/project-countries-api-desktop_iyqwb8.png',
+      mobile:
+        'https://res.cloudinary.com/dhvpcbfat/image/upload/v1743659026/project-country-api-mobile_uruo6t.png',
+    },
+    link: 'https://merry-madeleine-e0af46.netlify.app/',
+  },
 ];
 
 export default projects;
